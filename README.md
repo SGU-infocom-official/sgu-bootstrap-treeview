@@ -2,17 +2,17 @@
 
 ---
 
-![Bower version](https://img.shields.io/bower/v/patternfly-bootstrap-treeview.svg?style=flat)
-[![npm version](https://img.shields.io/npm/v/patternfly-bootstrap-treeview.svg?style=flat)](https://www.npmjs.com/package/patternfly-bootstrap-treeview)
-[![Build Status](https://img.shields.io/travis/patternfly/patternfly-bootstrap-treeview/master.svg?style=flat)](https://travis-ci.org/patternfly/patternfly-bootstrap-treeview)
+![Bower version](https://img.shields.io/bower/v/sgu-bootstrap-treeview.svg?style=flat)
+[![npm version](https://img.shields.io/npm/v/sgu-bootstrap-treeview.svg?style=flat)](https://www.npmjs.com/package/sgu-bootstrap-treeview)
+[![Build Status](https://img.shields.io/travis/sgu/sgu-bootstrap-treeview/master.svg?style=flat)](https://travis-ci.org/sgu/sgu-bootstrap-treeview)
 
 A simple and elegant solution to displaying hierarchical tree structures (i.e. a Tree View) while leveraging the best that Twitter Bootstrap has to offer.
 
-![Bootstrap Tree View Default](https://raw.github.com/jonmiles/patternfly-bootstrap-treeview/master/screenshot/default.PNG)
+![Bootstrap Tree View Default](https://raw.github.com/jonmiles/sgu-bootstrap-treeview/master/screenshot/default.PNG)
 
 ## Dependencies
 
-Where provided these are the actual versions patternfly-bootstrap-treeview has been tested against.
+Where provided these are the actual versions sgu-bootstrap-treeview has been tested against.
 
 - [Bootstrap v3.3.4 (>= 3.0.0)](http://getbootstrap.com/) (doesn't support Bootstrap 4)
 - [jQuery v2.1.3 (>= 1.9.0)](http://jquery.com/)
@@ -25,22 +25,22 @@ Where provided these are the actual versions patternfly-bootstrap-treeview has b
 You can install using bower (recommended):
 
 ```javascript
-$ bower install patternfly-bootstrap-treeview
+$ bower install sgu-bootstrap-treeview
 ```
 
 or using npm:
 
 ```javascript
-$ npm install patternfly-bootstrap-treeview
+$ npm install sgu-bootstrap-treeview
 ```
 
-or [download](https://github.com/jonmiles/patternfly-bootstrap-treeview/releases) manually.
+or [download](https://github.com/jonmiles/sgu-bootstrap-treeview/releases) manually.
 
 
 
 ### Usage
 
-Add the following resources for the patternfly-bootstrap-treeview to function correctly.
+Add the following resources for the sgu-bootstrap-treeview to function correctly.
 
 ```html
 <!-- Required Stylesheets -->
@@ -124,9 +124,9 @@ If you want to do more, here's the full node specification
 ```javascript
 {
   text: "Node 1",
-  icon: "glyphicon glyphicon-stop",
+  icon: "fa fa-square",
   image: "something.png",
-  selectedIcon: "glyphicon glyphicon-stop",
+  selectedIcon: "fa fa-square",
   color: "#000000",
   backColor: "#FFFFFF",
   iconColor: "#FFFFFF",
@@ -231,7 +231,7 @@ Describes a node's initial state.
 #### state.checked
 `Boolean` `Default: false`
 
-Whether or not a node is checked, represented by a checkbox style glyphicon.
+Whether or not a node is checked, represented by a checkbox style fa.
 
 #### state.disabled
 `Boolean` `Default: false`
@@ -349,12 +349,12 @@ Boolean. Default: false
 Swaps the node icon with the checkbox, used in conjunction with showCheckbox.
 
 #### checkedIcon
-String, class names(s).  Default: "glyphicon glyphicon-check" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
+String, class names(s).  Default: "fa fa-check-square-o" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
 
 Sets the icon to be as a checked checkbox, used in conjunction with showCheckbox.
 
 #### collapseIcon
-String, class name(s).  Default: "glyphicon glyphicon-minus" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
+String, class name(s).  Default: "fa fa-minus" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
 
 Sets the icon to be used on a collapsible tree node.
 
@@ -364,17 +364,17 @@ String, [any legal color value](http://www.w3schools.com/cssref/css_colors_legal
 Sets the default foreground color used by all nodes, except when overridden on a per node basis in data.
 
 #### emptyIcon
-String, class name(s).  Default: "glyphicon" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
+String, class name(s).  Default: "fa" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
 
 Sets the icon to be used on a tree node with no child nodes.
 
 #### expandIcon
-String, class name(s).  Default: "glyphicon glyphicon-plus" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
+String, class name(s).  Default: "fa fa-plus" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
 
 Sets the icon to be used on an expandable tree node.
 
 #### loadingIcon
-String, class name(s).  Default: "glyphicon glyphicon-hourglass" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
+String, class name(s).  Default: "fa fa-hourglass-half" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
 
 Sets the icon to be used on an a lazyLoad node before its content gets loaded.
 
@@ -418,7 +418,7 @@ Boolean.  Default: false
 Whether or not multiple nodes can be selected at the same time.
 
 #### nodeIcon
-String, class name(s).  Default: "glyphicon glyphicon-stop" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
+String, class name(s).  Default: "fa fa-square" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
 
 Sets the default icon to be used on all nodes, except when overridden on a per node basis in data.
 
@@ -428,7 +428,7 @@ String, [any legal color value](http://www.w3schools.com/cssref/css_colors_legal
 Sets the default background color activated when the users cursor hovers over a node.
 
 #### partiallyCheckedIcon
-String, class names(s).  Default: "glyphicon glyphicon-expand" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
+String, class names(s).  Default: "fa fa-caret-square-o-right" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
 
 Sets the icon to be as a partially checked checkbox, used in conjunction with showCheckbox and hierarchicalCheck.
 
@@ -443,7 +443,7 @@ Boolean.  Default: false
 Whether or not a node can be reselected when its already selected, used in conjunction with preventUnselect.
 
 #### selectedIcon
-String, class name(s).  Default: "glyphicon glyphicon-stop" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
+String, class name(s).  Default: "fa fa-square" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
 
 Sets the default icon to be used on all selected nodes, except when overridden on a per node basis in data.
 
@@ -499,7 +499,7 @@ String, class names(s).  Default: "badge"
 Sets the class of tags
 
 #### uncheckedIcon
-String, class names(s).  Default: "glyphicon glyphicon-unchecked" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
+String, class names(s).  Default: "fa fa-square-o" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
 
 Sets the icon to be as an unchecked checkbox, used in conjunction with showCheckbox.
 

@@ -36,7 +36,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ### Changes
-- Removed nodeIcon by default, by popular demand.  Use `{nodeIcon: 'glyphicon glyphicon-stop'}` in initial options to add a node icon.
+- Removed nodeIcon by default, by popular demand.  Use `{nodeIcon: 'fa fa-square'}` in initial options to add a node icon.
 
 - Search behaviour, by default search will the expand tree view and reveal results.  Alternatively pass `{revealResults:false}`
 

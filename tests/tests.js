@@ -101,13 +101,13 @@
 			options = getOptions(el);
 		ok(options, 'Defaults created ok');
 		equal(options.levels, 2, 'levels default ok');
-		equal(options.expandIcon, 'glyphicon glyphicon-plus', 'expandIcon default ok');
-		equal(options.collapseIcon, 'glyphicon glyphicon-minus', 'collapseIcon default ok');
-		equal(options.emptyIcon, 'glyphicon', 'emptyIcon default ok');
+		equal(options.expandIcon, 'fa fa-plus', 'expandIcon default ok');
+		equal(options.collapseIcon, 'fa fa-minus', 'collapseIcon default ok');
+		equal(options.emptyIcon, 'fa', 'emptyIcon default ok');
 		equal(options.nodeIcon, '', 'nodeIcon default ok');
 		equal(options.selectedIcon, '', 'selectedIcon default ok');
-		equal(options.checkedIcon, 'glyphicon glyphicon-check', 'checkedIcon default ok');
-		equal(options.uncheckedIcon, 'glyphicon glyphicon-unchecked', 'uncheckedIcon default ok');
+		equal(options.checkedIcon, 'fa fa-check-square-o', 'checkedIcon default ok');
+		equal(options.uncheckedIcon, 'fa fa-square-o', 'uncheckedIcon default ok');
 		equal(options.color, undefined, 'color default ok');
 		equal(options.backColor, undefined, 'backColor default ok');
 		equal(options.borderColor, undefined, 'borderColor default ok');
@@ -144,13 +144,13 @@
 		// Then test user options are correctly set
 		var opts = {
 			levels: 99,
-			expandIcon: 'glyphicon glyphicon-expand',
-			collapseIcon: 'glyphicon glyphicon-collapse',
-			emptyIcon: 'glyphicon',
-			nodeIcon: 'glyphicon glyphicon-stop',
-			selectedIcon: 'glyphicon glyphicon-selected',
-			checkedIcon: 'glyphicon glyphicon-checked-icon',
-			uncheckedIcon: 'glyphicon glyphicon-unchecked-icon',
+			expandIcon: 'fa fa-caret-square-o-right',
+			collapseIcon: 'fa fa-caret-square-o',
+			emptyIcon: 'fa',
+			nodeIcon: 'fa fa-square',
+			selectedIcon: 'fa fa-check-square',
+			checkedIcon: 'fa fa-check-square-oed-icon',
+			uncheckedIcon: 'fa fa-square-o-icon',
 			color: 'yellow',
 			backColor: 'purple',
 			borderColor: 'purple',
@@ -188,13 +188,13 @@
 		options = getOptions(init(opts));
 		ok(options, 'User options created ok');
 		equal(options.levels, 99, 'levels set ok');
-		equal(options.expandIcon, 'glyphicon glyphicon-expand', 'expandIcon set ok');
-		equal(options.collapseIcon, 'glyphicon glyphicon-collapse', 'collapseIcon set ok');
-		equal(options.emptyIcon, 'glyphicon', 'emptyIcon set ok');
-		equal(options.nodeIcon, 'glyphicon glyphicon-stop', 'nodeIcon set ok');
-		equal(options.selectedIcon, 'glyphicon glyphicon-selected', 'selectedIcon set ok');
-		equal(options.checkedIcon, 'glyphicon glyphicon-checked-icon', 'checkedIcon set ok');
-		equal(options.uncheckedIcon, 'glyphicon glyphicon-unchecked-icon', 'uncheckedIcon set ok');
+		equal(options.expandIcon, 'fa fa-caret-square-o-right', 'expandIcon set ok');
+		equal(options.collapseIcon, 'fa fa-caret-square-o', 'collapseIcon set ok');
+		equal(options.emptyIcon, 'fa', 'emptyIcon set ok');
+		equal(options.nodeIcon, 'fa fa-square', 'nodeIcon set ok');
+		equal(options.selectedIcon, 'fa fa-check-square', 'selectedIcon set ok');
+		equal(options.checkedIcon, 'fa fa-check-square-oed-icon', 'checkedIcon set ok');
+		equal(options.uncheckedIcon, 'fa fa-square-o-icon', 'uncheckedIcon set ok');
 		equal(options.color, 'yellow', 'color set ok');
 		equal(options.backColor, 'purple', 'backColor set ok');
 		equal(options.borderColor, 'purple', 'borderColor set ok');
@@ -979,11 +979,11 @@
 
 		tree.checkAll();
 		equal($($tree.selector + ' ul li.node-checked').length, 9, 'Check all works, 9 nodes with node-checked class');
-		equal($($tree.selector + ' ul li .glyphicon-check').length, 9, 'Check all works, 9 nodes with glyphicon-check icon');
+		equal($($tree.selector + ' ul li .fa-check-square-o').length, 9, 'Check all works, 9 nodes with fa-check-square-o icon');
 
 		tree.uncheckAll();
 		equal($($tree.selector + ' ul li.node-checked').length, 0, 'Check all works, 9 nodes non with node-checked class');
-		equal($($tree.selector + ' ul li .glyphicon-unchecked').length, 9, 'Check all works, 9 nodes with glyphicon-unchecked icon');
+		equal($($tree.selector + ' ul li .fa-square-o').length, 9, 'Check all works, 9 nodes with fa-square-o icon');
 	});
 
 	test('checkNode / uncheckNode', function () {
@@ -1017,7 +1017,7 @@
 	});
 
 	test('selectNode / unselectNode', function () {
-		var tree = init({ data: data, selectedIcon: 'glyphicon glyphicon-selected' }).treeview(true);
+		var tree = init({ data: data, selectedIcon: 'fa fa-check-square' }).treeview(true);
 		var node = tree.findNodes('Parent 1', 'text');
 
 		tree.selectNode(node);

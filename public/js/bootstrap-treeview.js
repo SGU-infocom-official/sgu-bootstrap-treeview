@@ -1,5 +1,5 @@
 /* =========================================================
- * patternfly-bootstrap-treeview.js v2.1.0
+ * sgu-bootstrap-treeview.js v2.1.0
  * =========================================================
  * Copyright 2013 Jonathan Miles
  * Project URL : http://www.jondmiles.com/bootstrap-treeview
@@ -33,15 +33,15 @@
 
 		levels: 2,
 
-		expandIcon: 'glyphicon glyphicon-plus',
-		collapseIcon: 'glyphicon glyphicon-minus',
-		loadingIcon: 'glyphicon glyphicon-hourglass',
-		emptyIcon: 'glyphicon',
+		expandIcon: 'fa fa-plus',
+		collapseIcon: 'fa fa-minus',
+		loadingIcon: 'fa fa-hourglass-half',
+		emptyIcon: 'fa',
 		nodeIcon: '',
 		selectedIcon: '',
-		checkedIcon: 'glyphicon glyphicon-check',
-		partiallyCheckedIcon: 'glyphicon glyphicon-expand',
-		uncheckedIcon: 'glyphicon glyphicon-unchecked',
+		checkedIcon: 'fa fa-check-square-o',
+		partiallyCheckedIcon: 'fa fa-caret-square-o-right',
+		uncheckedIcon: 'fa fa-square-o',
 		tagsClass: 'badge',
 
 		color: undefined,
