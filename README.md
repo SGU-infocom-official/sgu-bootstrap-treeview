@@ -458,7 +458,7 @@ String, [any legal color value](http://www.w3schools.com/cssref/css_colors_legal
 Sets the foreground color of the selected node.
 
 #### selectedBackColor
-String, [any legal color value](http://www.w3schools.com/cssref/css_colors_legal.asp).  Default: '#428bca'.
+String, [any legal color value](http://www.w3schools.com/cssref/css_colors_legal.asp).  Default: '#007bff'.
 
 Sets the background color of the selected node.
 

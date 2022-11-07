@@ -50,7 +50,7 @@
 		changedNodeColor: '#39A5DC',
 		onhoverColor: '#F5F5F5',
 		selectedColor: '#FFFFFF',
-		selectedBackColor: '#428bca',
+		selectedBackColor: '#007bff',
 		searchResultColor: '#D9534F',
 		searchResultBackColor: undefined,
 
