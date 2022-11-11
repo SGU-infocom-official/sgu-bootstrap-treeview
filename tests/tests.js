@@ -111,10 +111,10 @@
 		equal(options.color, undefined, 'color default ok');
 		equal(options.backColor, undefined, 'backColor default ok');
 		equal(options.borderColor, undefined, 'borderColor default ok');
-		equal(options.onhoverColor, '#F5F5F5', 'onhoverColor default ok');
-		equal(options.selectedColor, '#FFFFFF', 'selectedColor default ok');
-		equal(options.selectedBackColor, '#007bff', 'selectedBackColor default ok');
-		equal(options.searchResultColor, '#D9534F', 'searchResultColor default ok');
+		equal(options.onhoverColor, 'var(--light)', 'onhoverColor default ok');
+		equal(options.selectedColor, 'var(--white)', 'selectedColor default ok');
+		equal(options.selectedBackColor, 'var(--blue)', 'selectedBackColor default ok');
+		equal(options.searchResultColor, 'var(--red)', 'searchResultColor default ok');
 		equal(options.searchResultBackColor, undefined, 'searchResultBackColor default ok');
 		equal(options.highlightSelected, true, 'highlightSelected default ok');
 		equal(options.highlightSearchResults, true, 'highlightSearchResults default ok');
